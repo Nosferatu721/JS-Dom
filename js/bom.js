@@ -39,13 +39,21 @@
 // Objeto URL
 // -------------
 
-console.log("*** *** Objeto URL (Location) *** ***");
-console.log(location);
-console.log(location.origin);
-console.log(location.protocol);
-console.log(location.host);
-console.log(location.hostname);
-console.log(location.port);
-console.log(location.href);
-console.log(location.hash);
-console.log(location.pathname);
+// console.log("*** *** Objeto URL (Location) *** ***");
+// console.log(location);
+// console.log(location.origin);
+// console.log(location.protocol);
+// console.log(location.host);
+// console.log(location.hostname);
+// console.log(location.port);
+// console.log(location.href);
+// console.log(location.hash);
+// console.log(location.pathname);
+
+// console.log("*** *** History *** ***");
+// console.log(history);
+
+// console.log("*** *** Navegator *** ***");
+// console.log(navigator);
+// console.log(navigator.onLine);
+// console.log(navigator.onLine ? "Estas Conectado" : "Sin Coneccion");
