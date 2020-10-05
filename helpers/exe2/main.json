@@ -1,0 +1,64 @@
+{
+  "workbench.colorTheme": "Atom One Dark",
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Fira Code Light,  'Courier New', monospace",
+  "editor.fontWeight": "300",
+  "editor.cursorBlinking": "expand",
+  "editor.cursorStyle": "line-thin",
+  "window.menuBarVisibility": "toggle",
+  "indentRainbow.colors": [
+    "rgb(0,120,167, 0.07)",
+    "rgb(252,74,26, 0.07)",
+    "rgb(74,189,172, 0.07)",
+    "rgb(154,57,57, 0.07)"
+  ],
+  "bracketPairColorizer.scopeLineCSS": [
+    "borderStyle : dashed",
+    "borderWidth : 1px",
+    "borderColor : {color}; opacity: 1"
+  ],
+  "bracketPairColorizer.consecutivePairColors": [
+    "()",
+    "[]",
+    "{}",
+    ["#0078A7", "#FC4A1A", "#4ABDAC", "#9A3939"],
+    "Red"
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+  "window.zoomLevel": 0,
+  "editor.fontSize": 14,
+  "explorer.confirmDelete": false,
+  "editor.tabSize": 2,
+  "atomKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  // "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:\\Program Files\\Firefox Developer Edition\\firefox.exe",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "explorer.confirmDragAndDrop": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "color-highlight.markerType": "underline",
+  "color-highlight.markRuler": false,
+  "color-highlight.matchWords": true,
+  "editor.colorDecorators": true,
+  "terminal.integrated.shell.linux": "/bin/zsh",
+  "emmet.preferences": {
+    "css.webkitProperties": "border-right,animation",
+    "css.fuzzySearchMinScore": 0.2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
