@@ -5,6 +5,7 @@
 
 import buttonUpp from "./button_upp.js";
 import { default as countdown } from "./cuenta_regresiva.js";
+import darkTheme from "./darkTheme.js";
 
 // btnMenu.addEventListener("click", () => {
 //   const display = blockMenu.style.display;
@@ -125,4 +126,8 @@ countdown("countdown", "Nov 18, 2020 16:00:00", "Feliz Cumple");
 
 // Button Upp
 
-buttonUpp()
+buttonUpp(".upp");
+
+// Button DarkTheme
+
+darkTheme(".darkTheme", "darkMode");

@@ -1,3 +1,7 @@
+:root {
+  --background: #222;
+  --color: #ddd;
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +15,8 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: #222;
-  color: #ddd;
+  background-color: var(--background);
+  color: var(--color);
   font-size: 1.6rem;
   position: relative;
 }
@@ -26,7 +30,7 @@ a {
   width: 100%;
   height: 10vh;
   background-color: #ed4c67;
-  color: #222;
+  color: var(--background);
   text-align: center;
   line-height: 10vh;
   position: sticky;
@@ -103,18 +107,18 @@ section {
   z-index: 10;
   padding: 1rem;
   margin: 1rem;
-  border: 1px solid #222;
+  border: 1px solid var(--background);
   background-color: #ed4c67;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 
 .hamburger-box {
-  transform: scale(.8);
+  transform: scale(0.8);
 }
 
 .btn-menu i {
-  color: #222;
+  color: var(--background);
   font-size: 2rem;
 }
 
@@ -128,15 +132,40 @@ section {
   padding: 1rem;
   margin: 1rem;
   border: 2px solid #ed4c67;
-  background-color: #222;
+  background-color: var(--background);
   border-radius: 50%;
   cursor: pointer;
+  outline: hidden;
   transform: rotateZ(-90deg);
+  transition: 0.3s;
 }
 
 .upp span {
-  color: #222;
   font-size: 2rem;
+}
+/* Btn DarkTheme */
+
+.darkTheme {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  padding: 1rem;
+  margin: 1rem;
+  border: 2px solid #ed4c67;
+  background-color: var(--color);
+  border-radius: 50%;
+  cursor: pointer;
+  outline: hidden;
+  transition: 0.3s;
+}
+
+.darkTheme span {
+  font-size: 2rem;
+}
+
+.darkTheme.darkMode {
+  background: var(--background);
 }
 
 .uppHidden {
@@ -161,5 +190,12 @@ section {
   height: 20px;
   border-radius: 50%;
   background-color: rebeccapurple;
-  transition: .3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+/* Dark Mode */
+
+.darkMode {
+  background-color: var(--color);
+  color: var(--background);
 }
