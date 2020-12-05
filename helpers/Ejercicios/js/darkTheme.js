@@ -7,7 +7,7 @@ const darkTheme = (btn, classDark) => {
 
   let moon = "🌙",
     sun = "🌞";
-  console.log(selectors);
+  // console.log(selectors);
 
   d.addEventListener("click", (e) => {
     if (e.target.matches(btn)) {
