@@ -19,6 +19,7 @@ body {
   color: var(--color);
   font-size: 1.6rem;
   position: relative;
+  transition: 0.3s ease-out;
 }
 
 a {
@@ -41,7 +42,7 @@ a {
 section {
   width: 100%;
   height: 80vh;
-  padding-top: 1rem;
+  padding: 1rem;
   /* margin-top: 6rem; */
   text-align: center;
   box-shadow: 0 0 0.5rem #111;
@@ -110,6 +111,7 @@ section {
   background-color: #ed4c67;
   border-radius: 0.5rem;
   cursor: pointer;
+  outline: none;
 }
 
 .hamburger-box {
@@ -157,6 +159,7 @@ section {
   cursor: pointer;
   outline: hidden;
   transition: 0.3s;
+  outline: none;
 }
 
 .darkTheme span {
@@ -197,4 +200,45 @@ section {
 .darkMode {
   background-color: var(--color);
   color: var(--background);
+}
+
+/* Online Offline */
+
+.online,
+.offline {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-align: center;
+  background-color: #1b5e20;
+  color: #fff;
+  animation: anime 3s;
+}
+
+@keyframes anime {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.9);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  75% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20px) scale(0.9);
+    opacity: 0;
+  }
+}
+
+.offline {
+  background-color: #b71c1c;
 }

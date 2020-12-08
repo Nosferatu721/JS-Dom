@@ -38,7 +38,7 @@ const userDeviceInfo = (id) => {
         );
       },
     };
-  console.log(ua);
+  // console.log(ua);
   iD.innerHTML = `
     <li>User Agent: <b>${ua}</b></li>
     <li>Plataforma: <b>${
