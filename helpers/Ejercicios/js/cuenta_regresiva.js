@@ -10,7 +10,7 @@ const countdown = (id, limitDate, finaleMessage) => {
         (limitTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       ),
       minutes = Math.floor((limitTime % (1000 * 60 * 60)) / (1000 * 60)),
-      seconds = Math.floor((limitTime % (1000 * 60)) / (1000));
+      seconds = Math.floor((limitTime % (1000 * 60)) / 1000);
     // console.log(limitTime);
 
     countBox.innerHTML = `<h4>Faltan ${days} dias ${hours} horas ${minutes} minutos y ${seconds} segundos </h4>`;

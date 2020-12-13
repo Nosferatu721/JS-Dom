@@ -8,6 +8,7 @@ import { default as countdown } from "./cuenta_regresiva.js";
 import darkTheme from "./darkTheme.js";
 import userDeviceInfo from "./deteccion_dispositivos.js";
 import networkStatus from "./deteccion_red.js";
+import getGeolocation from "./geolocalizacion.js";
 
 // btnMenu.addEventListener("click", () => {
 //   const display = blockMenu.style.display;
@@ -91,8 +92,6 @@ document.addEventListener("DOMContentLoaded", () => {
       limitsBox = box.getBoundingClientRect(),
       limitsBall = ball.getBoundingClientRect();
 
-    console.log(limitsBox);
-    console.log(limitsBall);
     switch (e.code) {
       case "ArrowUp":
         e.preventDefault();
@@ -135,6 +134,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Decteccion de dispositivos
 
   userDeviceInfo("user-agent");
+
+  // Geolocalizacion
+
+  getGeolocation("geolocation");
 });
 
 networkStatus();
