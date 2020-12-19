@@ -19,7 +19,7 @@ const getGeolocation = (id) => {
       </ul>
       <a href="https://www.google.com/maps/@${coords.latitude},${coords.longitude},14z" target="_blank" rel="noopener">Ver mapa</a>
     `;
-    console.log(position);
+    // console.log(position);
   };
   const error = (err) => {
     ID.innerHTML = `<p>Error: ${err.code} - ${err.message}</p>`;

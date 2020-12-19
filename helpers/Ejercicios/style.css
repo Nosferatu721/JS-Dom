@@ -243,3 +243,76 @@ section {
 .offline {
   background-color: #b71c1c;
 }
+
+/* Contact FOrm Validations */
+
+.contact-form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.contact-form > * {
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form legend,
+.contact-form--response {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 1rem;
+  font-family: sans-serif;
+  border-radius: 3px;
+}
+
+.contact-form *::placeholder {
+  color: #000;
+}
+/* Validar si el contenido es valido */
+.contact-form [required]:valid {
+  border: thin solid #4caf50;
+}
+/* Validar si el contenido es invalido */
+.contact-form [required]:invalid {
+  border: thin solid #f44336;
+}
+
+.contact-form--error {
+  margin-top: -1rem;
+  font-size: 80%;
+  background-color: #f44336;
+  color: white;
+  transition: all 0.8s ease;
+}
+
+.contact-form--error.isActive {
+  display: block;
+  animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+@keyframes show-message {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.none {
+  display: none;
+}

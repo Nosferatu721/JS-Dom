@@ -45,6 +45,24 @@
     <h3>Geolocation</h3>
     <div id="geolocation"></div>
   </section>
+  <section id="Secction7">
+    <h3>Validacion de formulario</h3>
+    <form action="https://formsubmit.co/elkintorres721@gmail.com" method="POST" class="contact-form">
+      <legend>Envianos tus comentarios</legend>
+      <input type="text" name="Name" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required title="El Nombre Solo Acepta Letras Y Espacios En Blanco">
+      <input type="email" name="Email" placeholder="Escribe tu Email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required title="El Email Debe Ser Correcto">
+      <input type="text" name="Subject" placeholder="Asunto a tratar" title="El Asunto Es Requerido" required>
+      <textarea name="Comments" cols="50" rows="5" placeholder="Escribe tus comentarios" data-pattern="^.{1,255}$" title="Tu Comentario No Debe Exeder Los 255 Caracteres" required></textarea>
+      <input type="submit" value="Enviar">
+      <div class="contact-form--loader none">
+        <img src="./img/ball-triangle.svg" alt="Cargando">
+      </div>
+      <div class="contact-form--response none">
+        <p>Los datos han sido enviados</p>
+      </div>
+    </form>
+    <div id=""></div>
+  </section>
   <button data-dark id="btnDark" class="darkTheme">
     <!-- <span>🌙🌞</span> -->
     🌞
@@ -66,6 +84,7 @@
         <li><a class="link" href="#Secction4">Deteccion de dispositivos (User Agent)</a></li>
         <li><a class="link" href="#Secction5">Deteccion de la conexion</a></li>
         <li><a class="link" href="#Secction6">Geolocalizacion</a></li>
+        <li><a class="link" href="#Secction7">Validacion de formularios</a></li>
       </ul>
     </nav>
   </div>

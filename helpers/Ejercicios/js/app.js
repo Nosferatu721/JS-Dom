@@ -9,6 +9,7 @@ import darkTheme from "./darkTheme.js";
 import userDeviceInfo from "./deteccion_dispositivos.js";
 import networkStatus from "./deteccion_red.js";
 import getGeolocation from "./geolocalizacion.js";
+import contactFormValidations from "./validacion_form.js";
 
 // btnMenu.addEventListener("click", () => {
 //   const display = blockMenu.style.display;
@@ -138,6 +139,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Geolocalizacion
 
   getGeolocation("geolocation");
+
+  // Validation Form
+
+  contactFormValidations();
 });
 
 networkStatus();
